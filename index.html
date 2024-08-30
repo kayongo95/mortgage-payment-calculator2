@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <title>Mortgage Payment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>KN Mortgage Payment Calculator</h1>
+        <form id="mortgage-form">
+            <div class="form-group">
+                <label for="loan-amount">Loan Amount (£):</label>
+                <input type="number" id="loan-amount" required>
+            </div>
+            <div class="form-group">
+                <label for="interest-rate">Interest Rate (%):</label>
+                <input type="number" id="interest-rate" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="loan-term">Loan Term (years):</label>
+                <input type="number" id="loan-term" required>
+            </div>
+            <button type="button" onclick="calculatePayment()">Calculate Payment</button>
+        </form>
+        <div id="result">
+            <h2>Monthly Payment: <span id="monthly-payment">£0.00</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
